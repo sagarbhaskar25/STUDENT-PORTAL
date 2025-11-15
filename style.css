@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #a2b4e5;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #354a7f;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+header div{
+    margin: 10px;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+}
+nav a{
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 5px;
+}
+nav a:hover{
+    background-color: #0e3fd3;
+    /* padding: 5px 10px; */
+}
+#home {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}#profile {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}#course {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}#grade {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}#feed {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}
+#cont {
+    background-color: #142c6d;
+    padding: 5px 10px;
+}
+
+
+      /* FOOTER STYLES */
+footer{
+    background-color: #354a7f;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
