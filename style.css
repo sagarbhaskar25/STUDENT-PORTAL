@@ -60,7 +60,7 @@ nav a:hover{
 
 /* ----MAIN PORTION----- */
 main{
-    padding: 120px;
+    padding-top: 100px;
 
 }
 
@@ -80,6 +80,14 @@ footer{
 }
 
 /* ------HOME PAGE------- */
+
+main .ghar{
+    display: flex;
+    background-color: #d1d7dd;
+    width: 100%;
+    border-radius: 12px;
+    
+}
 .ghar p{
     font-size: 18px;
     line-height: 1.6;
@@ -89,71 +97,91 @@ footer{
 /* --------PROFILE PAGE------- */
 
 .profile-contain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-contain > div {
+    background: #fff;
     width: 80%;
-    margin: auto;
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 .profile-contain img {
-    display: block;
-    margin: auto;
+    width: 120px;
     border-radius: 50%;
 }
 
-.profile-contain div {
-    text-align: center;
+.profile-contain h2 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.profile-contain em {
+    display: block;
+    margin: 10px 0;
+    font-style: italic;
+    color: #555;
 }
 
 .profile-contain p {
     margin-top: 10px;
     line-height: 1.6;
-    color: #444;
 }
-
-
-
 .profile-container {
-    background-color: white;
-    width: 80%;
-    margin: 10px;
-    padding: 40px;
-padding-top: 20px;
-    border-radius: 12px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-
-
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 0 40px 40px;
 }
+
 .card1 {
-    
-    width: 210px;
-    box-sizing: border-box;
-    background-color: #354a7f;
+    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-.card1 h3{
-    margin-top: 0;
+
+.card1 h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
 }
-.card1 ul{
-    padding-left: 20px;
+
+.card1 h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #007bff;
 }
+
+.card1 ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.card1 ul li {
+    margin: 6px 0;
+    line-height: 1.4;
+}
+
+
 
 /* -----------COURSE PAGE------ */
 .course-contain {
     background-color: white;
     border-radius: 12px;
     width: 80%;
-    /* margin: 200px; */
     text-align: center;
     font-size: 17px;
     margin: 20px auto 35px auto;
-    /* width: 85%; */
+
 }
 .card2 {
 
@@ -196,7 +224,7 @@ table{
     margin: 20px 0;
     border-radius: 10px;
     overflow: hidden;
-    /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+   
 }
 table th, table td{
     padding: 12px 15px;
@@ -274,16 +302,7 @@ form button:hover {
 
 }
 
-/* main > div {
-    width: 80%;
-    margin: 10px;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    font-size: 18px;
-    line-height: 1.8;
-} */
+
 
 
 
@@ -299,4 +318,54 @@ form button:hover {
 
     }
 
+}
+@media (max-width: 480px) {
+
+    /* Navigation */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    /* Heading */
+    main h1 {
+        font-size: 24px;
+    }
+
+    /* Profile image smaller */
+    .profile-contain img {
+        width: 90px;
+    }
+
+    /* Reduce padding */
+    .profile-contain > div {
+        padding: 15px;
+    }
+
+    .card1 h3 {
+        font-size: 20px;
+    }
+
+    .card1 h4 {
+        font-size: 16px;
+    }
+
+    /* Contact page */
+    .contact_ {
+        width: 95%;
+        padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+        position: static;
+    }
 }
